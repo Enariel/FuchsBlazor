@@ -15,5 +15,12 @@
       <UpToDateCheckInput Remove="Areas\MyFeature\Pages\Page1.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Enums\" />
+      <Folder Include="Themes\Models\" />
+      <Folder Include="Utilities\" />
+      <Folder Include="wwwroot\css\" />
+    </ItemGroup>
+
 
 </Project>
