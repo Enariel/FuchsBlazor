@@ -1,0 +1,322 @@
+// add a prefix before CSS variables to prevent unwanted conflicts.
+$CSS_VAR_PFX: fuchs__ !default;
+$IS_LTR: true !default;
+$CENTERED_CONTAINERS: true !default;
+
+// do not change names, just values
+$RESPONSIVE_BREAKPOINTS: (
+        xs: 575.98px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
+) !default;
+
+// *** Design: border width, radius, opacity, links
+$BORDER_WIDTH: max(2px, 0.18em) !default;
+$BORDER_RADIUS: 1em !default;
+
+// This list will be converted to helper classes.
+// .edge-[]
+$BORDER_RADIUS_LIST: (
+        sharp: 0em,
+        round-xs: 0.32em,
+        round-sm: 0.5em,
+        round-md: 0.75em,
+        round-lg: 1em,
+        circle: 50em,
+        oval: 50%,
+        triangle: 100% 50% 50% 100% / 75% 69% 69% 75%,
+) !default;
+
+// This list will be converted to helper classes.
+// .width-[]
+$WIDTH_LIST: (
+        0p: 0,
+        10p: 10%,
+        15p: 15%,
+        25p: 25%,
+        30p: 30%,
+        50p: 50%,
+        60p: 60%,
+        75p: 75%,
+        90p: 90%,
+        95p: 95%,
+        100p: 100%,
+) !default;
+
+// This list will be converted to helper classes.
+// .height-[]
+$HEIGHT_LIST: (
+        0p: 0,
+        10p: 10%,
+        15p: 15%,
+        25p: 25%,
+        30p: 30%,
+        50p: 50%,
+        60p: 60%,
+        75p: 75%,
+        90p: 90%,
+        95p: 95%,
+        100p: 100%,
+) !default;
+
+// This list will be converted to helper classes.
+// .opacity-[]
+$OPACITY_LIST: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100) !default;
+
+$HOVER_BRIGHTNESS: 95%;
+$BACKDROP_OPACITY: 0.35 !default;
+
+$LINK_DECORATION: none !default;
+$LINK_DECORATION_HOVER: underline 0.125em currentColor !default;
+$LINK_DECORATION_FOCUS: none !default;
+
+// z-index
+$ZINDEX_DROPDOWN: 1000 !default;
+$ZINDEX_STICKY: 1010 !default;
+$ZINDEX_FIXED: 1020 !default;
+$ZINDEX_FIREWORKS: 1025 !default;
+$ZINDEX_BACKDROP: 1030 !default;
+$ZINDEX_MODAL_BACKDROP: 1030 !default;
+$ZINDEX_MODAL: 1040 !default;
+$ZINDEX_POPOVER: 1060 !default;
+$ZINDEX_TOAST: 1100 !default;
+
+// *** Colors: accent color, background color, text color, heading color, palette
+$BG_COLOR: #ffffff !default;
+$BG_COLOR_2: #f1f4f7 !default;
+$BG_COLOR_3: #ced9e3 !default;
+$BG_COLOR_4: #809cb6 !default;
+
+$TXT_COLOR: #2e4051 !default;
+$TXT_COLOR_LIGHT: tint($TXT_COLOR, 35%) !default;
+$TXT_COLOR_DARK: shade($TXT_COLOR, 35%) !default;
+$TXT_COLOR_DARKER: shade($TXT_COLOR, 60%) !default;
+$TXT_COLOR_INVERTED: $BG_COLOR !default;
+
+$BLUE: #1cb0f6 !default;
+$BLUE_LIGHT: tint($BLUE, 40%) !default;
+$BLUE_DARK: shade($BLUE, 15%) !default;
+$BLUE_DARKER: shade($BLUE, 50%) !default;
+
+$GREEN: #58cc02 !default;
+$GREEN_LIGHT: tint($GREEN, 40%) !default;
+$GREEN_DARK: shade($GREEN, 15%) !default;
+$GREEN_DARKER: shade($GREEN, 50%) !default;
+
+$YELLOW: #ffde00 !default;
+$YELLOW_LIGHT: tint($YELLOW, 40%) !default;
+$YELLOW_DARK: shade($YELLOW, 15%) !default;
+$YELLOW_DARKER: shade($YELLOW, 35%) !default;
+
+$ORANGE: #ff9600 !default;
+$ORANGE_LIGHT: tint($ORANGE, 40%) !default;
+$ORANGE_DARK: shade($ORANGE, 15%) !default;
+$ORANGE_DARKER: shade($ORANGE, 50%) !default;
+
+$RED: #ff4b4b !default;
+$RED_LIGHT: tint($RED, 40%) !default;
+$RED_DARK: shade($RED, 15%) !default;
+$RED_DARKER: shade($RED, 50%) !default;
+
+$PINK: #ff86d0 !default;
+$PINK_LIGHT: tint($PINK, 40%) !default;
+$PINK_DARK: shade($PINK, 15%) !default;
+$PINK_DARKER: shade($PINK, 50%) !default;
+
+$PURPLE: #c164ff !default;
+$PURPLE_LIGHT: tint($PURPLE, 40%) !default;
+$PURPLE_DARK: shade($PURPLE, 15%) !default;
+$PURPLE_DARKER: shade($PURPLE, 50%) !default;
+
+$ACCENT_COLOR: $BLUE !default;
+$ACCENT_COLOR_LIGHT: $BLUE_LIGHT !default;
+$ACCENT_COLOR_DARK: $BLUE_DARK !default;
+$ACCENT_COLOR_DARKER: $BLUE_DARKER !default;
+
+$SUCCESS_COLOR: $GREEN !default;
+$SUCCESS_COLOR_LIGHT: $GREEN_LIGHT !default;
+$SUCCESS_COLOR_DARK: $GREEN_DARK !default;
+$SUCCESS_COLOR_DARKER: $GREEN_DARKER !default;
+
+$INFO_COLOR: $BLUE !default;
+$INFO_COLOR_LIGHT: $BLUE_LIGHT !default;
+$INFO_COLOR_DARK: $BLUE_DARK !default;
+$INFO_COLOR_DARKER: $BLUE_DARKER !default;
+
+$WARNING_COLOR: $ORANGE !default;
+$WARNING_COLOR_LIGHT: $ORANGE_LIGHT !default;
+$WARNING_COLOR_DARK: $ORANGE_DARK !default;
+$WARNING_COLOR_DARKER: $ORANGE_DARKER !default;
+
+$DANGER_COLOR: $RED !default;
+$DANGER_COLOR_LIGHT: $RED_LIGHT !default;
+$DANGER_COLOR_DARK: $RED_DARK !default;
+$DANGER_COLOR_DARKER: $RED_DARKER !default;
+
+$LIGHT_COLOR: $BG_COLOR_2 !default;
+$LIGHT_COLOR_LIGHT: $BG_COLOR !default;
+$LIGHT_COLOR_DARK: $BG_COLOR_3 !default;
+$LIGHT_COLOR_DARKER: $BG_COLOR_4 !default;
+
+$DARK_COLOR: $TXT_COLOR !default;
+$DARK_COLOR_LIGHT: $TXT_COLOR_LIGHT !default;
+$DARK_COLOR_DARK: $TXT_COLOR_DARK !default;
+$DARK_COLOR_DARKER: $TXT_COLOR_DARKER !default;
+
+$HEADING_COLOR: currentColor !default;
+
+$LINK_COLOR: $ACCENT_COLOR !default;
+$LINK_COLOR_HOVER: $ACCENT_COLOR_LIGHT !default;
+$LINK_COLOR_FOCUS: $ACCENT_COLOR_DARK !default;
+
+$TAP_HIGHLIGHT_COLOR: transparent !default;
+
+// Do not modify this palette directly
+$PALETTE: (
+        blue: (
+                primary: $BLUE,
+                light: $BLUE_LIGHT,
+                dark: $BLUE_DARK,
+                darker: $BLUE_DARKER,
+        ),
+        green: (
+                primary: $GREEN,
+                light: $GREEN_LIGHT,
+                dark: $GREEN_DARK,
+                darker: $GREEN_DARKER,
+        ),
+        yellow: (
+                primary: $YELLOW,
+                light: $YELLOW_LIGHT,
+                dark: $YELLOW_DARK,
+                darker: $YELLOW_DARKER,
+        ),
+        orange: (
+                primary: $ORANGE,
+                light: $ORANGE_LIGHT,
+                dark: $ORANGE_DARK,
+                darker: $ORANGE_DARKER,
+        ),
+        red: (
+                primary: $RED,
+                light: $RED_LIGHT,
+                dark: $RED_DARK,
+                darker: $RED_DARKER,
+        ),
+        pink: (
+                primary: $PINK,
+                light: $PINK_LIGHT,
+                dark: $PINK_DARK,
+                darker: $PINK_DARKER,
+        ),
+        purple: (
+                primary: $PURPLE,
+                light: $PURPLE_LIGHT,
+                dark: $PURPLE_DARK,
+                darker: $PURPLE_DARKER,
+        ),
+        accent: (
+                primary: $ACCENT_COLOR,
+                light: $ACCENT_COLOR_LIGHT,
+                dark: $ACCENT_COLOR_DARK,
+                darker: $ACCENT_COLOR_DARKER,
+        ),
+        success: (
+                primary: $SUCCESS_COLOR,
+                light: $SUCCESS_COLOR_LIGHT,
+                dark: $SUCCESS_COLOR_DARK,
+                darker: $SUCCESS_COLOR_DARKER,
+        ),
+        info: (
+                primary: $INFO_COLOR,
+                light: $INFO_COLOR_LIGHT,
+                dark: $INFO_COLOR_DARK,
+                darker: $INFO_COLOR_DARKER,
+        ),
+        warning: (
+                primary: $WARNING_COLOR,
+                light: $WARNING_COLOR_LIGHT,
+                dark: $WARNING_COLOR_DARK,
+                darker: $WARNING_COLOR_DARKER,
+        ),
+        danger: (
+                primary: $DANGER_COLOR,
+                light: $DANGER_COLOR_LIGHT,
+                dark: $DANGER_COLOR_DARK,
+                darker: $DANGER_COLOR_DARKER,
+        ),
+        light: (
+                primary: $LIGHT_COLOR,
+                light: $LIGHT_COLOR_LIGHT,
+                dark: $LIGHT_COLOR_DARK,
+                darker: $LIGHT_COLOR_DARKER,
+        ),
+        dark: (
+                primary: $DARK_COLOR,
+                light: $DARK_COLOR_LIGHT,
+                dark: $DARK_COLOR_DARK,
+                darker: $DARK_COLOR_DARKER,
+        ),
+);
+
+// *** Motion: animations, transitions
+$SUPPORT_SMOOTH_SCROLL: true !default;
+
+$SIMPLE_TRANSITION: 0.15s ease-in-out !default; // without specifying properties
+$LONG_TRANSITION: 1s ease-in-out !default; // without specifying properties
+$BOUNCING_TRANSITION: 0.35s cubic-bezier(0.59, -0.39, 0.36, 1.38) !default; // without specifying properties
+
+$ACCORDION_SHOW_ANIMATION_DURATION: 300ms !default;
+$ACCORDION_HIDE_ANIMATION_DURATION: 200ms !default;
+$ALERT_HIDE_ANIMATION_DURATION: 300ms !default;
+$ALERT_SHOW_ANIMATION_DURATION: 200ms !default;
+$DROPDOWN_SHOW_ANIMATION_DURATION: 300ms !default;
+$DROPDOWN_HIDE_ANIMATION_DURATION: 200ms !default;
+$MODAL_SHOW_ANIMATION_DURATION: 350ms !default;
+$MODAL_HIDE_ANIMATION_DURATION: 250ms !default;
+// submenu works with CSS, so it is not possible to set hide animation.
+$SUBMENU_SHOW_ANIMATION_DURATION: 350ms !default;
+$SUBMENU_SHOW_ANIMATION_DELAY: 200ms !default;
+$TAB_SHOW_ANIMATION_DURATION: 300ms !default;
+$TAB_HIDE_ANIMATION_DURATION: 200ms !default;
+$TOAST_SHOW_ANIMATION_DURATION: 300ms !default;
+$TOAST_HIDE_ANIMATION_DURATION: 200ms !default;
+
+// *** Typography: font size, font family, line height
+$MIN_FONT_SIZE: 85% !default; // must be percent
+$MAX_FONT_SIZE: 100% !default; // must be percent
+$PRIMARY_FONT_FAMILY: "Nunito", sans-serif !default;
+$HEADING_FONT_FAMILY: $PRIMARY_FONT_FAMILY !default;
+$CODE_FONT_FAMILY: "Fira Code", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// This list will be converted to helper classes.
+// .size-[] | .text-[]
+$FONT_SIZE_LIST: (
+        xs: 0.75em,
+        sm: 0.9em,
+        md: 1em,
+        lg: 1.25em,
+        2x: 1.5em,
+        3x: 2.2em,
+        4x: 2.5em,
+        5x: 3.14em,
+) !default;
+
+$MEDIUM_FONT_WEIGHT: 600 !default;
+$BOLD_FONT_WEIGHT: 700 !default;
+$EXTRA_BOLD_FONT_WEIGHT: 900 !default;
+
+$BASE_LINE_HEIGHT: 1.5 !default;
+$SMALL_LINE_HEIGHT: 1.2 !default;
+$LARGE_LINE_HEIGHT: 1.8 !default;
+
+$BODY_TEXT_ALIGN: initial !default;
+
+$HEADING_MARGIN_BOTTOM: 0.5em !default;
+$HEADING_FONT_STYLE: normal !default;
+$HEADING_FONT_WEIGHT: bold !default;
+
+$PARAGRAPH_MARGIN_BOTTOM: 2em !default;

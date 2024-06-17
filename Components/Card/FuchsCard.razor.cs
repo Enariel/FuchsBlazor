@@ -1,8 +1,10 @@
-using Microsoft.AspNetCore.Components;
+// Copyright (c) FuchsFarbe Blazor 2024
+// Oliver Conover
+// FuchsFarbe Studios
 
-namespace FuchsBlazor
+namespace FuchsBlazor.Components;
+
+public partial class FuchsCard
 {
-    public partial class FuchsCard : ComponentBase
-    {
-    }
+
 }

@@ -16,6 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="Components\Blockquote\"/>
       <Folder Include="Enums\" />
       <Folder Include="Themes\Models\" />
       <Folder Include="Utilities\" />
