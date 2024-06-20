@@ -2,7 +2,7 @@
 // Oliver Conover
 // FuchsFarbe Studios
 
-namespace FuchsBlazor.Components;
+namespace FuchsBlazor;
 
 public partial class FuchsCard
 {
