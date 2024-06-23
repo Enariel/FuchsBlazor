@@ -1,0 +1,59 @@
+﻿/*!
+ * FlatifyCSS version 1.5.3
+ * Modern flat design framework for the web — inspired by Duolingo design system. 
+ * Copyright 2021-2022 The FlatifyCSS Authors
+ * Licensed under MIT (https://github.com/amir2mi/flatifycss/blob/master/LICENSE)
+ */
+
+@import "flatify-scss/func";
+@import "flatify-scss/config";
+@import "flatify-scss/helpers/responsive";
+@import "flatify-scss/root";
+@import "flatify-scss/reset";
+@import "flatify-scss/content/blockquote";
+@import "flatify-scss/content/figure";
+@import "flatify-scss/content/hr";
+@import "flatify-scss/content/kbd";
+@import "flatify-scss/content/table";
+@import "flatify-scss/components/accordion";
+@import "flatify-scss/components/alert";
+@import "flatify-scss/components/badge";
+@import "flatify-scss/components/backdrop";
+@import "flatify-scss/components/breadcrumbs";
+@import "flatify-scss/components/button";
+@import "flatify-scss/components/two-layer-button";
+@import "flatify-scss/components/add-button";
+@import "flatify-scss/components/hamburger";
+@import "flatify-scss/components/arrow-button";
+@import "flatify-scss/components/icon-button";
+@import "flatify-scss/components/button-group";
+@import "flatify-scss/components/fireworks";
+@import "flatify-scss/components/card";
+@import "flatify-scss/components/menu";
+@import "flatify-scss/components/dropdown";
+@import "flatify-scss/components/popover";
+@import "flatify-scss/components/modal";
+@import "flatify-scss/components/loading";
+@import "flatify-scss/components/progress";
+@import "flatify-scss/components/search-bar";
+@import "flatify-scss/components/tabs";
+@import "flatify-scss/components/toast";
+@import "flatify-scss/forms/form";
+@import "flatify-scss/forms/input";
+@import "flatify-scss/forms/checkbox";
+@import "flatify-scss/forms/radio";
+@import "flatify-scss/forms/range";
+@import "flatify-scss/forms/select";
+@import "flatify-scss/forms/toggle";
+@import "flatify-scss/forms/textarea";
+@import "flatify-scss/mockups/items-group";
+@import "flatify-scss/helpers/animations";
+@import "flatify-scss/helpers/colors";
+@import "flatify-scss/helpers/container";
+@import "flatify-scss/helpers/design";
+@import "flatify-scss/helpers/layout";
+@import "flatify-scss/helpers/overlay-layer";
+@import "flatify-scss/helpers/pulse";
+@import "flatify-scss/helpers/typography";
+@import "flatify-scss/helpers/dark-mode";
+@import "flatify-scss/a11y";

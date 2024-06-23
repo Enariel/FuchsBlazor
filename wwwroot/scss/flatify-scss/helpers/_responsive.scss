@@ -95,7 +95,7 @@
 
 @mixin break-xl-max() {
   $xl-bp: map-get($RESPONSIVE_BREAKPOINTS, "xl");
-  @media screen and (max-width: ($xl-bp - 0.02px)) {
+  @media screen and (max-width:  ($xl-bp - 0.02px)) {
     @content;
   }
 }

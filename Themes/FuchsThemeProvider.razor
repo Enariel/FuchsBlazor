@@ -1,7 +1,2 @@
-@rootString
-
-@code {
-	[Parameter] public FuchsTheme Theme { get; set; } = new FuchsTheme();
-	[Parameter] public FuchsTheme DarkTheme { get; set; } = new FuchsTheme();
-	private MarkupString rootString = (MarkupString)"<style>:root{--fuchs-primary: #fff;--fuchs-secondary: #000;--fuchs-tertiary: #AAA;}</style>";
-}
+@namespace FuchsBlazor
+@((MarkupString)BuildTheme())
